@@ -1,0 +1,23 @@
+
+
+!
+vlt-domain 127
+ backup destination 192.168.1.106
+ discovery-interface ethernet1/1/31
+ discovery-interface ethernet1/1/32
+ peer-routing
+ vlt-mac 00:00:00:00:00:02
+!
+
+!
+
+!
+uplink-state-group 1
+ name "Virtual-switch-fail-over"
+ enable
+ upstream ethernet1/1/29
+ upstream ethernet1/1/30
+ upstream VLTi
+!
+
+!

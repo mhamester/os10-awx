@@ -1,0 +1,5 @@
+  - name: run multiple commands on remote nodes
+    os10_command:
+      commands:
+        - show version
+        - show interface

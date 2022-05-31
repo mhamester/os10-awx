@@ -1,0 +1,4 @@
+---
+collections:
+  - name: dellemc.os10
+  source: https://galaxy.ansible.com

@@ -2,7 +2,7 @@
   - dellemc.os10
   connection: network_cli
   gather_facts: false
-  hosts:network
+  hosts:
   - OS10AWX-SPINE-1
   - OS10AWX-LEAF-1
   - OS10AWX-SPINE-2

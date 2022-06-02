@@ -9,11 +9,11 @@
   - OS10AWX-LEAF-2
   - OS10AWX-LEAF-3
   - OS10AWX-LEAF-4
-  pre_tasks:
-  - name: PreConfigs
-    os10_config:
-      src: '{{ hostname }}.j2.pre'
-    when: preconf_path is exists
+#  pre_tasks:
+#  - name: PreConfigs
+#    os10_config:
+#      src: '{{ hostname }}.j2.pre'
+#    when: preconf_path is exists
   roles:
   - dellemc.os10.os10_interface
   - os10_vlan

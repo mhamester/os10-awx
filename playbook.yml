@@ -13,7 +13,7 @@
   - name: PreConfigs
     os10_config:
       src: '{{ hostname }}.j2.pre'
-   # when: preconf_path is exists
+    when: preconf_path is exists
   roles:
   - dellemc.os10.os10_interface
   - os10_vlan

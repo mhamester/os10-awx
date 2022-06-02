@@ -1,6 +1,23 @@
-tasks:  
+
+- collections:
+  - dellemc.os10
+  connection: network_cli
+  gather_facts: false
+  
+  hosts:
+  - OS10AWX-SPINE-1
+  - OS10AWX-LEAF-1
+  - OS10AWX-SPINE-2
+  - OS10AWX-LEAF-2
+  - OS10AWX-LEAF-3
+  - OS10AWX-LEAF-4
+  tasks:  
   - name: run multiple commands on remote nodes
     os10_command:
       commands:
         - show version
         - show interface
+  roles:
+
+  - os10_system
+ 

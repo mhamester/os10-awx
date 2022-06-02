@@ -3,7 +3,7 @@
   connection: network_cli
   gather_facts: false
   hosts:
-  - OS10AWX-SPINE-1
+#  - OS10AWX-SPINE-1
   - OS10AWX-LEAF-1
   - OS10AWX-SPINE-2
   - OS10AWX-LEAF-2
